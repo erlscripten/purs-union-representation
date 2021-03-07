@@ -66,7 +66,7 @@ let foo = function (v) {
     if (v === 0) {
         return {tag: "Leaf", value0: 0};
     };
-    return {tag: "Node", value0: foo(v - 1 | 0), value0: foo(v - 1 | 0)};
+    return {tag: "Node", value0: foo(v - 1 | 0), value1: foo(v - 1 | 0)};
 };
 let main = foo(20);
 
@@ -77,7 +77,7 @@ let foo = function (v) {
     if (v === 0) {
         return {tag: 0, value0: 0};
     };
-    return {tag: 1, value0: foo(v - 1 | 0), value0: foo(v - 1 | 0)};
+    return {tag: 1, value0: foo(v - 1 | 0), value1: foo(v - 1 | 0)};
 };
 let main = foo(20);
 
