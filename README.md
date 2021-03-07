@@ -1,4 +1,5 @@
-#Benchmark alternative data structure representations in purescript
+# Benchmark alternative data structure representations in purescript
+
 Background: https://github.com/purescript/purescript/issues/4020
 
 This repository contains 3 benchmarks:
